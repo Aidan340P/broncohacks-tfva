@@ -42,7 +42,7 @@ export default function HomePage() {
               </Link>
               <Link
                 href="/generate"
-                className="rounded-full border border-slate-700 px-5 py-3 font-medium text-slate-100 transition hover:border-slate-500 hover:bg-slate-800"
+                className="rounded-full bg-slate-900 border border-slate-700 px-5 py-3 font-medium text-slate-100 transition hover:border-slate-500 hover:bg-slate-800"
               >
                 Generate notes
               </Link>
@@ -51,9 +51,9 @@ export default function HomePage() {
           <div className="rounded-3xl border border-slate-800 bg-slate-950/70 p-6">
             <p className="mb-3 text-sm font-medium uppercase tracking-[0.2em] text-sky-300">Quick start</p>
             <ol className="space-y-4 text-sm leading-6 text-slate-300">
-              <li>1. Open <span className="font-medium text-white">My Notes</span> and add a few real note samples.</li>
-              <li>2. Open <span className="font-medium text-white">Generate</span> and paste a lecture or transcribe audio.</li>
-              <li>3. Open <span className="font-medium text-white">Lecture Library</span> to reuse saved lectures.</li>
+              <li>1. Open <a href="/my-notes" className="font-medium text-white hover:text-white-400 hover:underline hover:decoration-1"><span className="font-medium text-white">My Notes</span></a> and add a few real note samples.</li>
+              <li>2. Open <a href="/generate" className="font-medium text-white hover:text-white-400 hover:underline hover:decoration-1"><span className="font-medium text-white">Generate</span></a> and paste a lecture or transcribe audio.</li>
+              <li>3. Open <a href="/lecture-library" className="font-medium text-white hover:text-white-400 hover:underline hover:decoration-1"><span className="font-medium text-white">Lecture Library</span></a> to reuse saved lectures.</li>
             </ol>
           </div>
         </div>

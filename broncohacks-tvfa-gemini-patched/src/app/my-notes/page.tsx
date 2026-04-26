@@ -156,7 +156,7 @@ export default function MyNotesPage() {
             <button
               type="submit"
               disabled={saving}
-              className="rounded-full bg-sky-500 px-5 py-3 text-sm font-medium text-slate-950 transition hover:bg-sky-400 disabled:cursor-not-allowed disabled:opacity-60"
+              className="rounded-full bg-sky-500 px-5 py-3 text-sm font-medium text-slate-950 transition cursor-pointer hover:bg-sky-400 disabled:cursor-not-allowed disabled:opacity-60"
             >
               {saving ? "Saving..." : editingId ? "Update note" : "Save note"}
             </button>

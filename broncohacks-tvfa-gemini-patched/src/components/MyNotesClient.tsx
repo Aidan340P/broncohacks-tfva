@@ -124,7 +124,7 @@ export function MyNotesClient() {
             <button
               type="submit"
               disabled={busy}
-              className="rounded-full bg-slate-900 px-5 py-3 text-sm font-semibold text-white transition hover:bg-slate-700 disabled:cursor-not-allowed disabled:opacity-60"
+              className="rounded-full bg-slate-900 px-5 py-3 text-sm font-semibold text-white transition cursor-pointer hover:bg-slate-700 disabled:cursor-not-allowed disabled:opacity-60"
             >
               {editingId ? "Update note" : "Save note"}
             </button>
