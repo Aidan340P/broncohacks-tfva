@@ -264,7 +264,7 @@ export default function GeneratePage() {
                   }
                 }}
                 disabled={transcribing}
-                className="mt-4 rounded-full border border-slate-700 px-4 py-2 text-sm font-medium text-slate-200 transition hover:bg-slate-800 disabled:cursor-not-allowed disabled:opacity-60"
+                className="mt-4 rounded-full border border-slate-700 px-4 py-2 text-sm font-medium text-slate-200 transition cursor-pointer hover:bg-slate-800 disabled:cursor-not-allowed disabled:opacity-60"
               >
                 {transcribing ? "Transcribing..." : "Transcribe file"}
               </button>
@@ -280,7 +280,7 @@ export default function GeneratePage() {
                   type="button"
                   onClick={() => void startRecording()}
                   disabled={recording}
-                  className="rounded-full border border-slate-700 px-4 py-2 text-sm font-medium text-slate-200 transition hover:bg-slate-800 disabled:cursor-not-allowed disabled:opacity-60"
+                  className="rounded-full border border-slate-700 px-4 py-2 text-sm font-medium text-slate-200 transition cursor-pointer hover:bg-slate-800 disabled:cursor-not-allowed disabled:opacity-60"
                 >
                   Start
                 </button>
@@ -288,7 +288,7 @@ export default function GeneratePage() {
                   type="button"
                   onClick={stopRecording}
                   disabled={!recording}
-                  className="rounded-full border border-rose-500/40 px-4 py-2 text-sm font-medium text-rose-200 transition hover:bg-rose-500/10 disabled:cursor-not-allowed disabled:opacity-60"
+                  className="rounded-full border border-rose-500/40 px-4 py-2 text-sm font-medium text-rose-200 transition cursor-pointer hover:bg-rose-500/10 disabled:cursor-not-allowed disabled:opacity-60"
                 >
                   Stop
                 </button>
@@ -301,7 +301,7 @@ export default function GeneratePage() {
               type="button"
               onClick={() => void handleGenerate()}
               disabled={loading}
-              className="rounded-full bg-sky-500 px-5 py-3 text-sm font-medium text-slate-950 transition hover:bg-sky-400 disabled:cursor-not-allowed disabled:opacity-60"
+              className="rounded-full bg-sky-500 px-5 py-3 text-sm font-medium text-slate-950 transition cursor-pointer hover:bg-sky-400 disabled:cursor-not-allowed disabled:opacity-60"
             >
               {loading ? "Generating..." : "Generate notes"}
             </button>
@@ -314,7 +314,7 @@ export default function GeneratePage() {
                 setStatus("");
                 setWarning("");
               }}
-              className="rounded-full border border-slate-700 px-5 py-3 text-sm font-medium text-slate-200 transition hover:bg-slate-800"
+              className="rounded-full border border-slate-700 px-5 py-3 text-sm font-medium text-slate-200 transition cursor-pointer hover:bg-slate-800"
             >
               Clear
             </button>
